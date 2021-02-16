@@ -1,0 +1,124 @@
+/*fichiers css qui reinitialise*/
+@import '../css/minireset.css';
+@import '../css/normalize.css';
+
+/*fichiers css du site*/
+@import '../css/style_logo_menu.css';
+@import '../css/style_rechercher.css';
+@import '../css/style_filtres.css';
+@import '../css/style_hebergements.css';
+@import '../css/style_activites_marseille.css';
+@import '../css/style_footer.css';
+
+/*generalites*/
+* {
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	font-size: 19px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.encadrement {
+	margin: 0 1%;
+}
+
+.paddingTop10 {
+	padding-top: 10px;
+}
+
+.paddingTop40 {
+	padding-top: 40px;
+}
+
+.marginBottom {
+	margin-bottom: 30px;
+}
+
+.marginBottom15 {
+	margin-bottom: 15px;
+}
+
+.marginBottom20 {
+	margin-bottom: 20px;
+}
+
+.marginBottom50 {
+	margin-bottom: 50px;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.bolder {
+	font-weight: 700;
+}
+
+.text_decoration--none {
+    text-decoration: none;
+    color: black;
+}
+
+.font_size70 {
+	font-size: 70%;
+	}
+
+.font_size90 {
+font-size: 90%;
+}
+
+.font-size130 {
+	font-size: 130%;
+}
+
+/*couleurs*/
+.bleuFonce {
+	color: #0065FC;
+}
+
+.bleuClair, .backgroundBleuClair{
+	color: #DEEBFF;
+}
+
+.grisFonce {
+	color: rgb(62, 62, 62);
+}
+
+.grisMoyen {
+	color: gray;
+}
+
+.grisClair {
+	color: #F2F2F2;
+}
+
+.backgroundGris {
+	background-color: #F2F2F2;
+}
+
+.backgroundBleuFonce {
+	background-color:  #0065FC;
+}
+
+.backgroundBleuClair {
+	background-color:  #DEEBFF;
+}
+
+/**************************************media queries********************************************/
+@media (min-width: 737px) and (max-width: 1023px) { 
+	.encadrement {
+		margin: 0 2%;
+	}
+}
+
+@media (max-width: 360px) { 
+	.deuxieme_partie_titre, .quatrieme_partie_titre {
+		font-size: 130%;
+}
+
+	.deuxieme_partie__info__disponibilites {
+		font-size: 80%;
+	}
+}

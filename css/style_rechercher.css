@@ -1,0 +1,205 @@
+/*partie Formulaire*/
+.deuxieme_partie__rechercher {
+	display: flex;
+}
+
+.deuxieme_partie__partie_icone_emplacement {
+	border: 1px solid #F2F2F2;/*couleur contour*/
+	width: 5%;
+	height: 65px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-top: 22px;
+} 
+
+.div_icone_emplacement {
+	background-color: #F2F2F2;
+	text-align: center;
+}
+
+.sous_items_formulaire_rechercher {
+	height: 65px;
+	padding-top: 8px;
+	border: 1px solid #F2F2F2;
+	width: 50%;
+}
+
+.deuxieme_partie__ville {
+	height: 50px;
+	padding-top: 8px;
+	border: 1px solid #F2F2F2;
+	width: 18%;
+	padding: 22px 0 40px 15px;
+}
+
+form {
+	width: 100%;	
+	display:flex;
+}
+
+select{ 
+	width: auto;
+	background: transparent;
+	font-weight: 600;
+	border: 0;
+	border-radius: 0;
+	appearance:unset;
+	-webkit-appearance: none;
+	outline: none;
+	}
+
+	.selections select:hover {
+	color: #0065FC;
+	} 
+
+	optgroup, option {
+		font-size: 90%;
+	}
+
+/******partie bouton desktop*******/   
+.deuxieme_partie__desktop button {
+	box-sizing: border-box;
+}
+		
+.deuxieme_partie__desktop button[type=submit] {
+	color: white;
+	font-weight: 500;
+	height: 65px;
+	width: 100%;
+	width: 175px;
+	border: none;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 0 20px;
+	outline: 0;
+}
+
+.deuxieme_partie__desktop button:hover, input[type=submit]:hover {
+	color: #0065FC;
+	font-weight: 600;
+	background-color: #DEEBFF;
+	cursor: pointer;
+	height: 65px;
+	width: 100%;
+	width: 175px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.deuxieme_partie__iphone8 {
+	visibility: hidden;
+}
+
+/******partie bouton iphone8*******/   
+.deuxieme_partie__iphone8 button {
+	box-sizing: border-box;
+}
+		
+.deuxieme_partie__iphone8 button[type=submit] {
+	background-color: #0065FC;
+	color: white;
+	height: 60px;
+	width: 100%;
+	border: none;
+	border-radius: 20px;
+	padding: 22px;
+	outline: 0;
+}
+
+.deuxieme_partie__iphone8 button:hover, input[type=submit]:hover {
+	color: #0065FC;
+	font-weight: 600;
+	background-color: #DEEBFF;
+	cursor: pointer;
+	height: 60px;
+	width: 100%;
+	border: none;
+	border-radius: 20px;
+	border: none;
+}
+
+/**************************************media queries********************************************/
+@media (min-width: 737px) and (max-width: 1023px) { 
+	.encadrement {
+		margin: 0 1%;
+	}
+
+	.deuxieme_partie__partie_icone_emplacement {
+		border: 1px solid #F2F2F2;/*couleur contour*/
+		width: 9%;
+		height: 65px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		padding-top: 22px;
+	} 
+
+	optgroup, option {
+		font-size: 80%;
+	}
+
+	.deuxieme_partie__ville {
+		height: 65px;
+		padding-top: 8px;
+		border: 1px solid #F2F2F2;
+		width: 28%;
+		padding: 22px 0 40px 15px;
+	}
+			
+	.deuxieme_partie__desktop button[type=submit] {
+		color: white;
+		height: 65px;
+		width: 100%;
+		width: 150px;
+		border: none;
+		border-bottom-right-radius: 10px;
+		border-top-right-radius: 10px;
+		padding: 0 20px;
+		outline: 0;
+	}
+	
+	.deuxieme_partie__desktop button:hover, input[type=submit]:hover {
+		color: #0065FC;
+		font-weight: 600;
+		background-color: #DEEBFF;
+		cursor: pointer;
+		height: 65px;
+		width: 100%;
+		width: 150px;
+		border-bottom-right-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.deuxieme_partie__iphone8 {
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 736px) { 
+	.deuxieme_partie__partie_icone_emplacement {
+	border: 1px solid #F2F2F2;/*couleur contour*/
+	height: 60px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding-top: 22px;
+	flex: 1 15%;
+} 
+
+.deuxieme_partie__ville {
+	height: 60px;
+	padding-top: 18px;
+	border: 1px solid #F2F2F2;
+	flex: 2 70%;
+	padding-right: 0%;
+}
+
+.deuxieme_partie__desktop {
+	display: none;
+}
+
+.deuxieme_partie__iphone8 {
+	visibility: visible;
+	flex: 1 15%;
+	margin-left: -5%;
+}
+}
+

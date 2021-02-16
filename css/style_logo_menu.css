@@ -1,0 +1,113 @@
+/*premiere partie du site*/
+.premiere_partie_header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center; /*alignement centrer à la verticale dans une row*/
+	height: 150px;
+	width: 100%;
+}
+
+.premiere_partie_header__logo {
+	flex: 3;
+}
+
+.premiere_partie_header__inscrire {
+	order: 1;
+}
+
+.inscrire {
+	font-weight: bold;	
+}
+
+.inscrire:link {
+	text-decoration: none;
+}
+
+.premiere_partie_header__menu {
+	flex: 1;
+	display: flex;
+	width: 100%;
+}
+
+.premiere_partie_header__menu ul {
+	display: flex; 
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.logo {
+	min-width: 12%;
+}
+
+.liste_hebergements, .liste_activites {
+	list-style: none;
+}
+
+.hebergements, .activites {
+	text-decoration: none;	
+}
+
+/*deuxieme partie*/
+.deuxieme_partie_titre, .quatrieme_partie_titre {
+	font-size: 140%;
+	font-weight: bolder;
+}
+
+.deuxieme_partie_paragraphe {
+	font-size : 100%;
+}
+
+/**************************************media queries********************************************/
+@media (min-width: 737px) and (max-width: 1023px) { 
+	.premiere_partie_header__logo {
+		flex: 3;
+	}
+
+	.premiere_partie_header__menu {
+		flex: 2;
+		display: flex;
+		width: 100%;
+	}
+}
+
+@media (max-width: 736px) {
+	.premiere_partie_header {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.premiere_partie_header__logo {
+		flex: 2;
+	}
+		
+	.premiere_partie_header__inscrire {
+		flex: 1;
+		order: 0;
+		text-align: right;
+		padding-top: 20px;
+	}
+	
+	.premiere_partie_header__menu {
+		flex: 1 100%;
+		height: 40px;
+	}
+
+	.liste_hebergements {
+		border-bottom: 2px solid blue;
+		flex: 1;
+		text-align: center;
+	}
+
+	.liste_activites {
+		border-bottom: 2px solid gainsboro;
+		flex: 1;
+		text-align: center;
+	}
+
+	/*deuxieme partie Partie rechercher*/
+	.deuxieme_partie_titre, .quatrieme_partie_titre {
+		font-size: 140%;
+	}
+}
