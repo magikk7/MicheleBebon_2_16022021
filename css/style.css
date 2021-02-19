@@ -13,7 +13,8 @@
 /*generalites*/
 * {
 	box-sizing: border-box;
-}
+} 
+
 body {
 	width: 100%;
 	font-size: 19px;
@@ -21,7 +22,7 @@ body {
 }
 
 .encadrement {
-	margin: 0 1%;
+	margin: 0 2%;
 }
 
 .paddingTop10 {
@@ -32,10 +33,6 @@ body {
 	padding-top: 40px;
 }
 
-.marginBottom {
-	margin-bottom: 30px;
-}
-
 .marginBottom15 {
 	margin-bottom: 15px;
 }
@@ -44,12 +41,16 @@ body {
 	margin-bottom: 20px;
 }
 
+.marginBottom30 {
+	margin-bottom: 30px;
+}
+
 .marginBottom50 {
 	margin-bottom: 50px;
 }
 
 .bold {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .bolder {
@@ -66,7 +67,7 @@ body {
 	}
 
 .font_size90 {
-font-size: 90%;
+	font-size: 90%;
 }
 
 .font-size130 {
@@ -87,7 +88,7 @@ font-size: 90%;
 }
 
 .grisMoyen {
-	color: gray;
+	color: #808080;
 }
 
 .grisClair {
@@ -104,21 +105,4 @@ font-size: 90%;
 
 .backgroundBleuClair {
 	background-color:  #DEEBFF;
-}
-
-/**************************************media queries********************************************/
-@media (min-width: 737px) and (max-width: 1023px) { 
-	.encadrement {
-		margin: 0 2%;
-	}
-}
-
-@media (max-width: 360px) { 
-	.deuxieme_partie_titre, .quatrieme_partie_titre {
-		font-size: 130%;
-}
-
-	.deuxieme_partie__info__disponibilites {
-		font-size: 80%;
-	}
 }

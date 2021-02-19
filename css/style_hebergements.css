@@ -1,10 +1,9 @@
-/* partie 3 "hebergements à Marseille" => partie 1 : les images x6 de memes tailles*/
+/* partie 3 hebergements à Marseille*/
 .troisieme_partie {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    height: auto;/*hauteur generale*/
+    height: auto;
 }
 
 /*partie hebergements*/
@@ -30,10 +29,8 @@
 
 .troisieme_partie__hebergements__section_images {
     display: flex; 
-    flex-direction: row; 
     flex-wrap: wrap; 
-    justify-content: space-evenly; /*espacement entre les cards*/
-    align-content: space-evenly;
+    justify-content: space-evenly; /*espacement entre cards*/
     width: 100%; 
     height: 650px;  
     padding: 0 30px;
@@ -44,9 +41,9 @@
     flex-direction: column; 
     width: calc(33% - 20px);
     height: 300px;
-    background-color: white;
     border-radius: 30px;
-    border: 4px solid white;
+    border: 4px solid #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 4px #d3d2d2;
 }
 
@@ -64,7 +61,7 @@
 /*deplacer image à interieur de la boite*/
 .troisieme_partie_cards_images--image {
     width: 100%;
-    height: 240px; 
+    height: 250px;
     object-fit: cover;
 }
 
@@ -109,7 +106,6 @@
 
 .partie_laterale_droit__titre {
     display: flex;
-    flex-direction: row;
     justify-content: space-between; 
     align-items: baseline;
     padding-top: 10px;
@@ -124,12 +120,11 @@
 
 .troisieme_partie__populaires_cards {
     display: flex;
-    flex-direction: row;
     overflow: hidden; 
     object-fit: cover;
     box-shadow: 0px 4px 4px #d3d2d2;
     border-radius: 30px;
-    border: 4px solid white;
+    border: 4px solid #FFFFFF;
     margin: 10px 0;
 }
 
@@ -149,7 +144,7 @@
     width: calc(33% - 20px);
     padding: 10px 30px 0 10px;
     line-height: 30px;        
-    background-color: white;
+    background-color: #FFFFFF;
     position: relative;
 }
 
@@ -160,38 +155,36 @@
     object-fit: cover;   
 }
 
-.troisieme_partie_titre__populaires {
+.troisieme_partie_titre__populaires, .troisieme_partie_paragraphe__populaires {
     font-size: 90%;
 }
 
-.troisieme_partie_paragraphe__populaires {
-    font-size: 90%;
-}
 .populaires_annotations{
     font-size: 65%;
     position: absolute;
     bottom: 0;
 }
 
-/****************************media queries***********************************/
+/*media queries*/
 @media (min-width: 1147px) and (max-width: 1400px) {             
-.troisieme_partie__hebergements {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    margin-right: 1%;
-    border-radius: 30px; 
-    background-color: #F2F2F2;
-    width: 100%;
-}
+    .troisieme_partie__hebergements {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        margin-right: 1%;
+        border-radius: 30px; 
+        background-color: #F2F2F2;
+        width: 100%;
+    }
+
     .troisieme_partie__hebergements_cards {
         display: flex; 
         flex-direction: column; 
         width: calc(50% - 20px);
         height: 200px;
-        background-color: white;
+        background-color: #FFFFFF;
         border-radius: 30px;
-        border: 4px solid white;
+        border: 4px solid #FFFFFF;
         box-shadow: 0px 4px 4px #d3d2d2;
     }
 
@@ -209,9 +202,9 @@
         flex-direction: column; 
         width: calc(50% - 20px);
         height: 200px;
-        background-color: white;
+        background-color: #FFFFFF;
         border-radius: 30px;
-        border: 4px solid white;
+        border: 4px solid #FFFFFF;
         box-shadow: 0px 4px 4px #d3d2d2;
     }
 
@@ -222,13 +215,9 @@
         object-fit: cover;
     }
     
-    .troisieme_partie_titre__populaires {
+    .troisieme_partie_titre__populaires,  .troisieme_partie_paragraphe__populaires {
         font-size: 80%;
     }
-
-    .troisieme_partie_paragraphe__populaires {
-        font-size: 80%;
-    }  
 }
 
 @media (min-width: 1042px) and (max-width: 1147px) {   
@@ -237,9 +226,9 @@
         flex-direction: column; 
         width: calc(50% - 20px);
         height: 200px;
-        background-color: white;
+        background-color: #FFFFFF;
         border-radius: 30px;
-        border: 4px solid white;
+        border: 4px solid #FFFFFF;
         box-shadow: 0px 4px 4px #d3d2d2;
     }
 
@@ -273,8 +262,7 @@
         display: flex; 
         flex-direction: row; 
         flex-wrap: wrap; 
-        justify-content: space-evenly;/*espacement entre les cards*/
-        align-content: space-evenly;
+        justify-content: space-evenly;/*espacement entre cards*/
         width: 100%; 
         height: 650px; 
     }
@@ -297,9 +285,9 @@
         flex-direction: column; 
         width: calc(50% - 20px);
         height: 200px;
-        background-color: white;
+        background-color: #FFFFFF;
         border-radius: 30px;
-        border: 4px solid white;
+        border: 4px solid #FFFFFF;
         box-shadow: 0px 4px 4px #d3d2d2;
     }
 
@@ -331,10 +319,8 @@
             
     .troisieme_partie__hebergements__section_images {
         display: flex; 
-        flex-direction: row; 
         flex-wrap: wrap; 
-        justify-content: space-evenly; /*espacement entre les cards*/
-        align-content: space-evenly;
+        justify-content: space-evenly; /*espacement entre cards*/
         width: 100%; 
         height: 650px;
     }
@@ -361,9 +347,9 @@
         flex-direction: column; 
         width: calc(50% - 20px);
         height: 200px;
-        background-color: white;
+        background-color: #FFFFFF;
         border-radius: 30px;
-        border: 4px solid white;
+        border: 4px solid #FFFFFF;
         box-shadow: 0px 4px 4px #d3d2d2;
     }
 
@@ -382,7 +368,7 @@
         order: 1;
         margin: 20px 0 0 0;        
     }
-/*********************partie populaires*********************************/
+/*partie populaires*/
     .troisieme_partie__populaires {
         display: flex;
         flex-direction: column;  
@@ -396,10 +382,8 @@
             
     .troisieme_partie__hebergements__section_images {
         display: flex; 
-        flex-direction: row; 
         flex-wrap: wrap; 
         justify-content: space-evenly; /*espacement entre les cards*/
-        align-content: space-evenly;
         width: 100%; 
         height: 650px;
     }
@@ -430,7 +414,6 @@
 @media (max-width: 736px) { 
     .partie_laterale_droit__titre {
         display: flex;
-        flex-direction: row;
         justify-content: space-between; 
         align-items: baseline;
         padding-top: 10px;
@@ -475,14 +458,13 @@
         flex: 3;
         object-fit: cover;
     }
-
-    
-.troisieme_partie__populaires__section_images {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 580px;
-}
+        
+    .troisieme_partie__populaires__section_images {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 580px;
+    }
 
     .troisieme_partie__populaires_cards_titres {
         flex: 4;
@@ -491,12 +473,12 @@
         width: calc(33% - 20px);
         line-height: 30px; 
         padding: 10px 30px 0 10px;       
-        background-color: white;
+        background-color: #FFFFFF;
         position: relative;
     }
-
+    /*cadrer image*/ 
     .troisieme_partie_populaires__cards_images--image {
-        height: 200px;/*pour positionner/cadrer image*/  
+        height: 200px; 
     }
 
     .troisieme_partie_titre__populaires {
@@ -511,11 +493,10 @@
     /*partie hebergements*/
     .troisieme_partie__hebergements {
         order: 1;
-        background-color: white;
+        background-color: #FFFFFF;
     }
         
     .troisieme_partie__hebergements__section_images {
-        display: block;
         width: 100%;
         height: auto;
         padding: 0 0 0 5px;
@@ -535,7 +516,7 @@
         object-fit: cover;
     } 
 
-    /*la partie banniere en dessous des images*/
+    /*banniere en dessous des images*/
     .troisieme_partie_cards_titres {
         display: flex;
         flex-direction: column;
@@ -548,7 +529,7 @@
     /*deplacer image à interieur de la boite*/
     .troisieme_partie_cards_images--image {
         width: 100%;
-        height: 210px;  
+        height: 170px;  
         object-fit: cover;
     }
 

@@ -1,24 +1,24 @@
 /*premiere partie du site*/
 .premiere_partie_header {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center; /*alignement centrer à la verticale dans une row*/
-	height: 150px;
+	flex-wrap: nowrap;
+	align-items: center;
 	width: 100%;
+	margin: 20px 0 50px 0;
 }
 
 .premiere_partie_header__logo {
-	flex: 3;
+	flex: 4;
+	padding-top: 50px; 
 }
 
 .premiere_partie_header__inscrire {
 	order: 1;
+	padding: 50px 0 0 30px;
 }
 
 .inscrire {
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .inscrire:link {
@@ -26,15 +26,8 @@
 }
 
 .premiere_partie_header__menu {
-	flex: 1;
+	flex: 1; 
 	display: flex;
-	width: 100%;
-}
-
-.premiere_partie_header__menu ul {
-	display: flex; 
-	justify-content: space-evenly;
-	width: 100%;
 }
 
 .logo {
@@ -42,13 +35,23 @@
 }
 
 .liste_hebergements, .liste_activites {
-	list-style: none;
+	width: 100%;
+	padding: 50px 30px 0 30px;	
+	border-top: 2px solid transparent;
+	text-align: center;
+} 
+
+.liste_hebergements:hover {
+	border-top: 2px solid #0065FC;
+}
+
+.liste_activites:hover {	
+	border-top: 2px solid gainsboro;
 }
 
 .hebergements, .activites {
-	text-decoration: none;	
+	text-decoration: none;
 }
-
 /*deuxieme partie*/
 .deuxieme_partie_titre, .quatrieme_partie_titre {
 	font-size: 140%;
@@ -59,8 +62,8 @@
 	font-size : 100%;
 }
 
-/**************************************media queries********************************************/
-@media (min-width: 737px) and (max-width: 1023px) { 
+/*media queries*/
+@media (min-width: 736px) and (max-width: 1024px) { 
 	.premiere_partie_header__logo {
 		flex: 3;
 	}
@@ -70,12 +73,24 @@
 		display: flex;
 		width: 100%;
 	}
+		
+	.liste_hebergements, .liste_activites {
+		padding: 50px 15px 0 15px;	
+		text-align: center;
+	} 
+		
+	.premiere_partie_header__inscrire {
+		padding-left: 15px;
+		text-align: center;
+	}
 }
 
 @media (max-width: 736px) {
 	.premiere_partie_header {
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 30px;
+		padding: 0 3%;
 	}
 
 	.premiere_partie_header__logo {
@@ -86,24 +101,42 @@
 		flex: 1;
 		order: 0;
 		text-align: right;
-		padding-top: 20px;
 	}
 	
 	.premiere_partie_header__menu {
 		flex: 1 100%;
 		height: 40px;
+		margin-top: 30px;
 	}
 
-	.liste_hebergements {
-		border-bottom: 2px solid blue;
+	.liste_hebergements { 
 		flex: 1;
 		text-align: center;
 	}
 
 	.liste_activites {
-		border-bottom: 2px solid gainsboro;
 		flex: 1;
 		text-align: center;
+	}
+
+	.premiere_partie_header__inscrire {
+		padding-left: 15px; 
+	}
+		
+	.liste_hebergements, .liste_activites {
+		padding: 0px 15px 0 15px;	
+		border-top: 2px solid transparent;
+		border-bottom: 2px solid transparent;
+	} 
+
+	.liste_hebergements:hover {
+		border-top: 2px solid transparent;
+		border-bottom: 2px solid #0065FC;
+	}
+
+	.liste_activites:hover {	
+		border-top: 2px solid transparent;
+		border-bottom: 2px solid gainsboro;
 	}
 
 	/*deuxieme partie Partie rechercher*/
