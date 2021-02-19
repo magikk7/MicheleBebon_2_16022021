@@ -181,12 +181,12 @@ optgroup, option {
 	.deuxieme_partie__ville {
 		width: 100%;
 		border: 1px solid #F2F2F2;
-		padding: auto 2%;
+		padding: 22px 0 40px 15px;
 	}
 
 	.deuxieme_partie__desktop {
 		display: none;
-	}
+	} 
 
 	.deuxieme_partie__iphone8 {
 		visibility: visible;
